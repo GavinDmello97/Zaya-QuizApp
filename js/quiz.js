@@ -66,7 +66,7 @@ var questions = [
         answer: 2
     },
     {
-        question: "What is the ramainder of 17/3?",
+        question: "What is the remainder of 17/3?",
         choice1: '2',
         choice2: '5',
         choice3: '1',
