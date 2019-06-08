@@ -1,11 +1,10 @@
     
+/*
 
-/*Header*/
 #head {
   text-align: center;
   opacity: 1;
   float: left;
-  padding-left: 10%;
   width: 90%;
 }
 
@@ -29,45 +28,11 @@
 
 
 
-/*MainPage Start*/
-
-
-.mainpage {
-  height: 100%;
-  align-content: center; 
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-  text-align: center;
-}
-
-/*MainPage End*/
-
-/*QUIZ Start*/
-
-.quizz {
-  margin-bottom: 115px;
-  margin-top: 10px;
-  align-content: center;
-  width: 90vw;
-  height: 460px;
-  padding: 20px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-  text-align: center;
-  background-color: #dfdfdf;
-  opacity: 0.8;
-}
-
-/*QUIZ End*/
 
 
 
 
-/* HUD Starts*/
+
 
 #hud {
   display: flex;
@@ -142,9 +107,147 @@
   background-color: #56a5eb; 
 }
 
-/*HUD End*/
 
+*/
+
+ /*HEADER START*/
+    #head {
+      text-align: center;
+      opacity: 1;
+      float: left;      
+      width: 80%;
+    }
+
+    #close {
+      float: right;
+      padding: 0px;
+      width: 20%;
+      height: 120px;
+      align-content: center;
+      padding-top: 25px;
+    }
+
+    #close1 { 
+        
+      width: 100%;
+      height: 60%;
+      margin: 0px; 
+    }
+
+    #close1:hover {      
+      text-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    }
+
+    #qName {
+
+    }
+
+    #quotes {
+
+    }
+  /*HEADER END*/ 
+
+
+  /*HUD START*/
+    #hud {
+      display: flex;
+      justify-content: space-between;
+    }
+    #hud-item {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      
+    }
+    .hud-main-text {
+      text-align: left;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    #progressBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      
+    }
+
+    #progressBarFull {
+      width: 10%;
+      height: 34px;
+      background-color: #56a5eb;     
+    }
+
+    .btn-primary {
+      width: 100%;
+      margin-top: 50px;
+      
+    }
+
+    #hud-item1 {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .hud-main-text1 {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    #scoreBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      align-content: center;
+    }
+
+    .hud-main-text12 {
+      text-align: center;
+      font-size: 15px;
+      height: 100%;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+  /*HUD END*/  
+
+.mainpage {
+  height: 100%;
+  align-content: center; 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+.quizz {
+  margin-bottom: 115px;
+  margin-top: 10px;
+  align-content: center;
+  width: 90vw;
+  height: 460px;
+  padding: 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+  background-color: #dfdfdf;
+  opacity: 0.8;
+}
 /*Container Start */
+
+
 .choice-container {
   display: flex;
   margin-left: 5px;
@@ -190,18 +293,361 @@
 
 /*MEDIA QUERIES START*/
 
-@media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
- 
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+ /*HEADER START*/
+    #head {
+      text-align: center;
+      opacity: 1;
+      float: left;      
+      width: 80%;
+    }
+
+    #close {
+      float: right;
+      padding: 0px;
+      width: 20%;
+      height: 120px;
+      align-content: center;
+      padding-top: 25px;
+    }
+
+    #close1 { 
+        
+      width: 100%;
+      height: 60%;
+      margin: 0px; 
+    }
+
+    #close1:hover {      
+      text-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    }
+  /*HEADER END*/ 
+
+
+  /*HUD START*/
+    #hud {
+      display: flex;
+      justify-content: space-between;
+    }
+    #hud-item {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      
+    }
+    .hud-main-text {
+      text-align: left;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    #progressBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      
+    }
+
+    #progressBarFull {
+      width: 10%;
+      height: 34px;
+      background-color: #56a5eb;     
+    }
+
+    .btn-primary {
+      width: 100%;
+      margin-top: 50px;
+      
+    }
+
+    #hud-item1 {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .hud-main-text1 {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    #scoreBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      align-content: center;
+    }
+
+    .hud-main-text12 {
+      text-align: center;
+      font-size: 15px;
+      height: 100%;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    
+    
+
+    
+
+    
+
+  /*HUD END*/  
+
+
 
 }
-@media (max-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
-   
-}
-@media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+   /*HEADER START*/
+    #head {
+      text-align: center;
+      opacity: 1;
+      float: left;      
+      width: 80%;
+    }
+
+    #close {
+      float: right;
+      padding: 0px;
+      width: 20%;
+      height: 120px;
+      align-content: center;
+      padding-top: 25px;
+    }
+
+    #close1 { 
+      float: left;  
+      width: 80%;
+      height: 50%;
+      margin: 0px;
+
+    }
+
+    #close1:hover {      
+      text-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    }
+
+    #qName {
+      width: 80%;
+      margin-left: 80px;
+    }
+
+    #quotes {
+      width: 80%;
+      margin-left: 80px;
+    }
+
+  /*HEADER END*/ 
+
+
+  /*HUD START*/
+    #hud {
+      display: flex;
+      justify-content: space-between;
+    }
+    #hud-item {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      
+    }
+    .hud-main-text {
+      text-align: left;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    #progressBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      
+    }
+
+    #progressBarFull {
+      width: 10%;
+      height: 34px;
+      background-color: #56a5eb;     
+    }
+
+    .btn-primary {
+      width: 100px;
+      margin-top: 39px;
+      
+    }
+
+    #hud-item1 {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .hud-main-text1 {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+
+    #scoreBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      align-content: center;
+    }
+
+    .hud-main-text12 {
+      text-align: center;
+      font-size: 15px;
+      height: 100%;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    
+    
+
+    
+
+    
+
+  /*HUD END*/  
     
 }
-@media (max-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
     /*HEADER START*/
+    #head {
+      text-align: center;
+      opacity: 1;
+      float: left;      
+      width: 80%;
+    }
+
+    #close {
+      float: right;
+      padding: 0px;
+      width: 20%;
+      height: 120px;
+      align-content: center;
+      padding-top: 25px;
+    }
+
+    #close1 { 
+      float: left;  
+      width: 55%;
+      height: 50%;
+      margin: 0px;
+      margin-left: 20px;
+
+    }
+
+    #close1:hover {      
+      text-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    }
+
+    #qName {
+      width: 80%;
+      margin-left: 115px;
+    }
+
+    #quotes {
+      width: 80%;
+      margin-left: 115px;
+    }
+
+  /*HEADER END*/ 
+
+
+  /*HUD START*/
+    #hud {
+      display: flex;
+      justify-content: space-between;
+    }
+    #hud-item {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      
+    }
+    .hud-main-text {
+      text-align: left;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    #progressBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      
+    }
+
+    #progressBarFull {
+      width: 10%;
+      height: 34px;
+      background-color: #56a5eb;     
+    }
+
+    .btn-primary {
+      width: 100px;
+      margin-top: 46px;
+      
+    }
+
+    #hud-item1 {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .hud-main-text1 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 2px;
+    }
+
+    #scoreBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      align-content: center;
+    }
+
+    .hud-main-text12 {
+      text-align: center;
+      font-size: 18px;
+      height: 100%;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 0px;
+    }
+
+  /*HUD END*/  
+
+}
+
+
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands detops */ 
+  /*HEADER START*/
     #head {
       text-align: center;
       opacity: 1;
@@ -211,17 +657,18 @@
     }
 
     #close {
-      
-      padding: 0px;
+      float: right;
+      padding: 30px;
       width: 20%;
       height: 120px;
       align-content: center;
     }
 
     #close1 {    
-      width: 100%;
-      height: 100%;
-      margin: 0px; 
+      
+      width: 56%;
+      height: 78%;
+      margin-left: 20px; 
     }
 
     #close1:hover {      
@@ -247,22 +694,22 @@
       text-align: center;
       font-size: 8px;
       margin-top: 10px;
-      margin-left: 15px
+      
     }
 
     .hud-main-text {
       text-align: left;
-      font-size: 15px;
+      font-size: 22px;
     }
 
     .hud-main-text1 {
       text-align: center;
-      font-size: 15px;
+      font-size: 22px;
     }
 
     .hud-main-text12 {
       text-align: center;
-      font-size: 15px;
+      font-size: 18px;
       height: 100%;
       margin-top: 8px;
       margin-bottom: 0px;
@@ -271,13 +718,13 @@
     .btn-primary {
       width: 100px;
       margin-top: 48px;
-      margin-left: 30px;
+      margin-left: 24px;
     }
     #progressBar {
       width: 100%;
       height: 40px;
       border: 3px solid #56a5eb;
-      margin-left: 5px;
+      
     }
 
     #scoreBar {
@@ -294,36 +741,47 @@
     }
 
   /*HUD END*/  
-
-
 }
-@media (max-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands detops */ 
-  /*HEADER START*/
-    #head {
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+#head {
       text-align: center;
       opacity: 1;
-      float: left;
-      padding-left: 10%;
-      width: 90%;
+      float: left;      
+      width: 80%;
     }
 
     #close {
       float: right;
-      padding: 30px;
-      width: 10%;
+      padding: 0px;
+      width: 20%;
       height: 120px;
       align-content: center;
+      padding-top: 30px;
     }
 
-    #close1 {    
-      width: 100%;
-      height: 78%;
-      margin: 0px; 
+    #close1 { 
+      float: left;  
+      width: 38%;
+      height: 60%;
+      margin: 0px;
+      margin-left: 50px;
+
     }
 
     #close1:hover {      
       text-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     }
+
+    #qName {
+      width: 80%;
+      margin-left: 115px;
+    }
+
+    #quotes {
+      width: 80%;
+      margin-left: 115px;
+    }
+
   /*HEADER END*/ 
 
 
@@ -332,49 +790,53 @@
       display: flex;
       justify-content: space-between;
     }
-
-    .hud-prefix {
-      text-align: left;
-      font-size: 8px;
-      padding-top: 2px;
-      margin-left: 50px;
-
-    }
-    .hud-prefix1 {
+    #hud-item {
+      width: 30%;
       text-align: center;
-      font-size: 8px;
-      margin-top: 10px;
-      margin-left: 15px
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      
     }
-
     .hud-main-text {
       text-align: left;
-      font-size: 15px;
+      font-size: 20px;
+      margin-bottom: 4px;
     }
 
-    .hud-main-text1 {
-      text-align: center;
-      font-size: 15px;
-    }
-
-    .hud-main-text12 {
-      text-align: center;
-      font-size: 15px;
-      height: 100%;
-      margin-top: 8px;
-      margin-bottom: 0px;
-    }
-
-    .btn-primary {
-      width: 100px;
-      margin-top: 48px;
-      margin-left: 30px;
-    }
     #progressBar {
       width: 100%;
       height: 40px;
       border: 3px solid #56a5eb;
-      margin-left: 5px;
+      
+    }
+
+    #progressBarFull {
+      width: 10%;
+      height: 34px;
+      background-color: #56a5eb;     
+    }
+
+    .btn-primary {
+      width: 100px;
+      margin-top: 46px;
+      margin-left: 20px;
+      
+    }
+
+    #hud-item1 {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .hud-main-text1 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 2px;
     }
 
     #scoreBar {
@@ -384,13 +846,130 @@
       align-content: center;
     }
 
+    .hud-main-text12 {
+      text-align: center;
+      font-size: 18px;
+      height: 100%;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 0px;
+    }
+
+  /*HUD END*/  
+
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    #head {
+      text-align: center;
+      opacity: 1;
+      float: left;      
+      width: 80%;
+    }
+
+    #close {
+      float: right;
+      padding: 0px;
+      width: 20%;
+      height: 120px;
+      align-content: center;
+      padding-top: 30px;
+    }
+
+    #close1 { 
+      float: left;  
+      width: 25%;
+      height: 60%;
+      margin: 0px;
+      margin-left: 120px;
+
+    }
+
+    #close1:hover {      
+      text-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    }
+
+    #qName {
+      width: 90%;
+      margin-left: 115px;
+    }
+
+    #quotes {
+      width: 90%;
+      margin-left: 115px;
+    }
+
+  /*HEADER END*/ 
+
+
+  /*HUD START*/
+    #hud {
+      display: flex;
+      justify-content: space-between;
+    }
+    #hud-item {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      
+    }
+    .hud-main-text {
+      text-align: left;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    #progressBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      
+    }
+
     #progressBarFull {
       width: 10%;
       height: 34px;
       background-color: #56a5eb;     
     }
 
-  /*HUD END*/  
-}
-@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (max-width:1281px) { /* hi-res laptops and desktops */ }
+    .btn-primary {
+      width: 100px;
+      margin-top: 46px;
+      margin-left: 20px;
+      
+    }
+
+    #hud-item1 {
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .hud-main-text1 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 2px;
+    }
+
+    #scoreBar {
+      width: 100%;
+      height: 40px;
+      border: 3px solid #56a5eb;
+      align-content: center;
+    }
+
+    .hud-main-text12 {
+      text-align: center;
+      font-size: 18px;
+      height: 100%;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 0px;
+    }
+
+  /*HUD END*/ }

@@ -6,7 +6,7 @@ const scoreText = document.getElementById("score");
 const skipper = document.getElementById("skip");
 const progressBarFull = document.getElementById("progressBarFull");
 
-let currentQuestion = {};
+let presentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
@@ -140,12 +140,12 @@ getNewQuestion = () => {
 
     
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);   //pick randomly 10 question from a set of available questions
-  currentQuestion = availableQuesions[questionIndex];
-  question.innerText = currentQuestion.question;
+  presentQuestion = availableQuesions[questionIndex];
+  question.innerText = presentQuestion.question;
 
   choices.forEach(choice => {                                                   //coupling together choice from js to choice in html
     const number = choice.dataset["number"];
-    choice.innerText = currentQuestion["choice" + number];
+    choice.innerText = presentQuestion["choice" + number];
   });
 
   availableQuesions.splice(questionIndex, 1);                                   //remove the question that has been displayed in the past
@@ -176,25 +176,18 @@ skipper.addEventListener("click", e => {
     progressBarFull.style.width = `${((questionCounter-1)/MAX_QUESTIONS) * 100}%`         //fill progress bar
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);   //pick randomly 10 question from a set of available questions
-  currentQuestion = availableQuesions[questionIndex];
-  question.innerText = currentQuestion.question;
+  presentQuestion = availableQuesions[questionIndex];
+  question.innerText = presentQuestion.question;
 
   choices.forEach(choice => {                                                   //coupling together choice from js to choice in html
     const number = choice.dataset["number"];
-    choice.innerText = currentQuestion["choice" + number];
+    choice.innerText = presentQuestion["choice" + number];
   });
 
   availableQuesions.splice(questionIndex, 1);                                   //remove the question that has been displayed in the past
   acceptingAnswers = true;
 
-
-
   });
-
-
-
-
-
 
 
 choices.forEach(choice => {                                                      //Take answers from user...
@@ -206,7 +199,7 @@ choices.forEach(choice => {                                                     
     const selectedAnswer = selectedChoice.dataset["number"];
 
     const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";        //ternery operator for correct/incorrect
+      selectedAnswer == presentQuestion.answer ? "correct" : "incorrect";        //ternery operator for correct/incorrect
 
     if (classToApply === "correct") {                                            //update score!!!
       incrementScore(CORRECT_BONUS);
