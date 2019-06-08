@@ -4,7 +4,7 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
 const skipper = document.getElementById("skip");
-
+const progressBarFull = document.getElementById("progressBarFull");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -119,7 +119,8 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {     //check for max- limit reached
     //go to the landing page
-  //  questionCounterText.innerText = `${MAX_QUESTIONS}/${MAX_QUESTIONS}`;
+   // questionCounterText.innerText = `${MAX_QUESTIONS}/${MAX_QUESTIONS}`;
+    skipper.disabled = true;
     question.innerText = `The test has ended...Redirecting to homepage`;
     choices.forEach(choice => {                                                   //coupling together choice from js to choice in html
     
@@ -132,8 +133,12 @@ getNewQuestion = () => {
     
   }
   questionCounter++;
-  questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;        //display counter
+  questionCounterText.innerText = `Question: ${questionCounter} of ${MAX_QUESTIONS}`;        //display counter
 
+  progressBarFull.style.width = `${((questionCounter-1)/MAX_QUESTIONS) * 100}%`                                                                                            //update Progress bar
+
+
+    
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);   //pick randomly 10 question from a set of available questions
   currentQuestion = availableQuesions[questionIndex];
   question.innerText = currentQuestion.question;
@@ -151,7 +156,8 @@ skipper.addEventListener("click", e => {
 
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {     //check for max- limit reached
     //go to the landing page
-  //  questionCounterText.innerText = `${MAX_QUESTIONS}/${MAX_QUESTIONS}`;
+   // questionCounterText.innerText = `Question: ${MAX_QUESTIONS} of ${MAX_QUESTIONS}`;
+    skipper.disabled = true;
     question.innerText = `The test has ended...Redirecting to homepage`;
     choices.forEach(choice => {                                                   //coupling together choice from js to choice in html
     
@@ -160,13 +166,14 @@ skipper.addEventListener("click", e => {
     
     setTimeout(() => {
      return window.location.assign("index.html");
-    }, 5000);
+    }, 3000);
     
   }
     
     incrementScore(SKIP_SCORE);
     questionCounter++;
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    questionCounterText.innerText = `Question: ${questionCounter} of ${MAX_QUESTIONS}`;
+    progressBarFull.style.width = `${((questionCounter-1)/MAX_QUESTIONS) * 100}%`         //fill progress bar
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);   //pick randomly 10 question from a set of available questions
   currentQuestion = availableQuesions[questionIndex];

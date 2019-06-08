@@ -28,13 +28,19 @@
 	<body background="src/img/background-quiz.jpg">
 
 
-	<div class="mainpage"> 
+	
 	  <div class="main">
-		  <div>
-		  	<h1>Quiz 1!</h1>
+		  <div id="head">
+		  	<h1 id="qName">Quiz 1!</h1>
 		  	<p id="quotes">Mathematics</p>
 		  </div>
+		  <div id="close">
+		  	<a href="index.html"><img src="src/icons/close.png" id="close1"></a>
+		  </div>	
 	  </div>
+
+
+	  <div class="mainpage"> 
 
 	 <!-- <div class="quizz">
 	  	<div id="quiz"></div>
@@ -50,9 +56,15 @@
 			  <div id="hud">
 	          <div id="hud-item">
 	            <p class="hud-prefix">
-	              Question
+	              <h3 class="hud-main-text" id="questionCounter"></h3>
 	            </p>
-	            <h3 class="hud-main-text" id="questionCounter"></h3>
+	            <div id="progressBar">
+	            	<div id="progressBarFull">
+	            		
+
+	            	</div>
+	            </div>
+	            
 	          </div>
 
 	          <div id="hud-item">
@@ -62,10 +74,10 @@
 	          </div>
 
 	          <div id="hud-item">
-	            <p class="hud-prefix">
+	            <p class="hud-prefix" id="score1">
 	              Score
 	            </p>
-	            <h3 class="hud-main-text" id="score">
+	            <h3 class="hud-main-text1" id="score">
 	              0
 	            </h3>
 	          </div> 
