@@ -119,7 +119,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {     //check for max- limit reached
     //go to the landing page
-    questionCounterText.innerText = `${MAX_QUESTIONS}/${MAX_QUESTIONS}`;
+  //  questionCounterText.innerText = `${MAX_QUESTIONS}/${MAX_QUESTIONS}`;
     question.innerText = `The test has ended...Redirecting to homepage`;
     choices.forEach(choice => {                                                   //coupling together choice from js to choice in html
     
@@ -151,7 +151,7 @@ skipper.addEventListener("click", e => {
 
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {     //check for max- limit reached
     //go to the landing page
-    questionCounterText.innerText = `${MAX_QUESTIONS}/${MAX_QUESTIONS}`;
+  //  questionCounterText.innerText = `${MAX_QUESTIONS}/${MAX_QUESTIONS}`;
     question.innerText = `The test has ended...Redirecting to homepage`;
     choices.forEach(choice => {                                                   //coupling together choice from js to choice in html
     
