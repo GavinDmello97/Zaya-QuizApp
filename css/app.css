@@ -95,36 +95,9 @@ body {
   text-align: center;
 }
 
-  #head {
-    text-align: right;
-    opacity: 1;
-    float: left;
-    width: 54vw;
-    
+ 
 
-  }
-
-  #close {
-    float: right;
-    padding: 20px;
-
-  }
-
-  #close1 {
-    
-    width: 50px;
-    height: 50px;
-    float: right;
-    margin-right: 30px;
-    margin-top: 15px;
-
-  }
-
-  #close1:hover {
-    
-    text-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-
-  }
+ 
 
 
 
@@ -140,16 +113,7 @@ body {
 
 
 
-.mainpage {
-  height: 52vw;
-  align-content: center; 
-  width: 100vw;
 
- justify-content: center;
- align-items: center;
- display: inline-block;
- text-align: center;
-}
 
 
 .btn-warning {
@@ -273,8 +237,10 @@ h2 {
 }
 
 .btn-primary {
+  margin-top: 55px;
   width: 160px;
-  margin-right: 90px;
+  height: 40px;
+  
 }
 
 .butto {
