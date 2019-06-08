@@ -214,10 +214,10 @@ h2 {
  margin-top: 10px;
  align-content: center;
  width: 50vw;
- height: 410px;
+ height: 370px;
  padding: 20px;
  display: flex;
- position: fixed;
+ 
  justify-content: center;
  align-items: center;
  display: inline-block;
