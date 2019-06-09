@@ -129,7 +129,7 @@ getNewQuestion = () => {
     
     setTimeout(() => {
      return window.location.assign("index.html");
-    }, 5000);
+    }, 10000);
     
   }
   questionCounter++;
@@ -166,7 +166,7 @@ skipper.addEventListener("click", e => {
     
     setTimeout(() => {
      return window.location.assign("index.html");
-    }, 3000);
+    }, 10000);
     
   }
     
