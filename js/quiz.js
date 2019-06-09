@@ -128,7 +128,8 @@ getNewQuestion = () => {
   });
     
     setTimeout(() => {
-     return window.location.assign("index.html");
+      window.location="index.html";
+     return window.location;
     }, 4000);
     
   }
@@ -165,7 +166,8 @@ skipper.addEventListener("click", e => {
   });
     
     setTimeout(() => {
-     return window.location.assign("index.html");
+     window.location="index.html";
+     return window.location;
     }, 4000);
     
   }
