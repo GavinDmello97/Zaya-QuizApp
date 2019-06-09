@@ -34,7 +34,7 @@ POPQUIZ!!</h1>
 <p>Can be played in landscape or potrait mode on mobile, tablets as desktops.</p>
 <br>
 <br>
-<h3>Feel free to play the game. Feedbacks are always welcomed.</h3>
+<h3>Feel free to play the game. Feedbacks are always welcomed!</h3>
 <br>
 <p>Link to the game:</p>
 <link>https://htmlpreview.github.io/?https://github.com/GavinDmello97/Zaya-QuizApp/blob/master/index.html</link>
