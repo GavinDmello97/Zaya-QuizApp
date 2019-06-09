@@ -128,8 +128,8 @@ getNewQuestion = () => {
   });
     
     setTimeout(() => {
-     return window.location.href("index.html");
-    }, 3000);
+     return window.location.assign("index.html");
+    }, 4000);
     
   }
   questionCounter++;
@@ -165,8 +165,8 @@ skipper.addEventListener("click", e => {
   });
     
     setTimeout(() => {
-     return window.location.href("index.html");
-    }, 3000);
+     return window.location.assign("index.html");
+    }, 4000);
     
   }
     
